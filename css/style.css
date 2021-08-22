@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: #efefef;
+}
+
+/* NAV BELOW */
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #1876f2;
+    padding: 5px 5%;
+    justify-content: space-between;
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    width: 150px;
+    margin-right: 45px;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.ul-nav-left{
+    list-style: none;
+}
+
+.ul-nav-left li{
+    display: inline-block;
+}
+
+.ul-nav-left li img:hover{
+    cursor: pointer;
+}
+
+.ul-nav-left img{
+    width: 30px;
+    margin-right: 25px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.search-nav-right{
+    background-color: #efefef;
+    padding: 6px 15px;
+    border-radius: 2em;
+    margin-right: 25px;
+}
+
+.search-nav-right input{
+    border: 0;
+    background: none;
+    outline: none;
+    padding: .5em;
+}
+
+.search-nav-right img{
+    width: 15px;
+    margin-right: 5px;
+}
+
+.profile-image-nav img{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.online{
+    position: relative;
+}
+
+.online::after{
+    content: '';
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    background: #41db51;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+
+/* DIV CONTAINER BELOW */
+
+.container{
+    padding: 13px 5%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-sidebar{
+    /* background-color: red; */
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+}
+
+.main{
+    background-color: black;
+    flex-basis: 46%;
+}
+
+.right-sidebar{
+    background-color: blue;
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+}
+
+.links-left{
+    border-bottom: 2px solid #ccc;
+}
+
+.links-left a, .shortcuts-left a{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 30px;
+    /* width: fit-content; */
+    color: rgb(131, 129, 129);
+}
+
+.links-left a:last-child{
+    color: #1876f2;
+    margin-bottom: 20px;
+}
+
+.links-left a img, .shortcuts-left a img{
+    width: 25px;
+    margin-right: 20px;
+}
+
+.shortcuts-left p{
+    margin: 20px 0;
+}
+
+.shortcuts-left a img{
+    border-radius: 5px;
+}
