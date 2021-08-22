@@ -107,7 +107,6 @@ nav{
 /* DIV CONTAINER - LEFT SIDEBAR */
 
 .left-sidebar{
-    /* background-color: red; */
     flex-basis: 25%;
     position: sticky;
     top: 70px;
@@ -120,7 +119,7 @@ nav{
 
 .links-left a, .shortcuts-left a{
     display: flex;
-    justify-content:flex-start;
+    justify-content:flex-start; /* substitui o width: fit-content */
     align-items: center;
     text-decoration: none;
     margin-bottom: 30px;
@@ -156,9 +155,132 @@ nav{
 /* DIV CONTAINER - RIGHT SIDEBAR */
 
 .right-sidebar{
-    background-color: blue;
+    background-color: #fff;
     flex-basis: 25%;
     position: sticky;
     top: 70px;
     align-self: flex-start;
+    box-sizing: border-box;
+    padding: 0 25px;
+    border-radius: .7em;
+}
+
+/* ------- Default Right Sidebar configs */
+
+.conversation-sidebar, .advertisement-sidebar, .events-sidebar{
+    margin: 25px 0;
+}
+
+.title-sidebar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.title-sidebar p{
+    color: rgb(117, 115, 115);
+    font-weight: 700;
+}
+
+.title-sidebar a{
+    text-decoration: none;
+    color: #1876f2;
+    font-size: .8em;
+}
+
+/* ---------- */
+
+.events-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-info{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.event-calendar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #efefef;
+    border-radius: .5em;
+    padding-top: 10px; /* desce o conteudo */
+    margin-right: 10px;
+    flex-basis: 60px;
+
+}
+
+.event-month{
+    background-color: #1876f2;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: .8em;
+    padding: 3px; /* aumenta embaixo em cima o month */
+}
+
+.event-description{
+    color: rgb(131, 129, 129);
+}
+
+.description-event-name{
+    font-weight: 700;
+}
+
+.description-event-location{
+    font-size: .9em;
+}
+
+.description-event-location img{
+    width: 15px;
+}
+
+.event-description a{
+    text-decoration: none;
+    color: #1876f2;
+    font-size: .8em;
+}
+
+.advertisement-sidebar img{
+    width: 100%;
+    border-radius: .5em;
+}
+
+
+.conversation-people{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.conversation-people img{
+    width: 45px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.online{
+    position: relative;
+}
+
+.online::after{
+    content: '';
+    height: 9px;
+    width: 9px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #41db51;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.conversation-people p{
+    color: rgb(131, 129, 129);
 }
