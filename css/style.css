@@ -265,11 +265,11 @@ nav{
     margin-right: 10px;
 }
 
-.online{
+.online-friends{
     position: relative;
 }
 
-.online::after{
+.online-friends::after{
     content: '';
     height: 9px;
     width: 9px;
