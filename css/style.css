@@ -1,12 +1,31 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
 body{
     background-color: #efefef;
+}
+
+textarea{
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: .7em;
+}
+
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #1876f2;
+    border-radius: 10px;
+    /* outline: 1px solid slategrey; */
 }
 
 /* NAV BELOW */
@@ -153,6 +172,8 @@ nav{
     flex-basis: 46%;
 }
 
+/* MAIN - Stories */
+
 .stories{
     display: flex;
     justify-content: space-between;
@@ -240,6 +261,68 @@ nav{
 }
 
 
+/* MAIN - User Post */
+
+.user-post{
+    background: white;
+    padding: 15px 25px;
+    border-radius: .7em;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 3%;
+}
+
+.profile-picture-main{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.post-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user-status{
+    margin-bottom: 1.5em;
+}
+
+.user-status p:nth-child(2){
+    font-size: .8em;
+    color: rgb(131, 129, 129);
+}
+
+.post-textarea{
+    width: 100%;
+    border: none;
+    display: block;
+    padding: .5em;
+    height: 100px;
+    border-bottom: 1px solid rgb(131, 129, 129);
+    margin-bottom: 1.5em;
+    outline: none;
+}
+
+.user-post-options{
+    display: flex;
+}
+
+.user-post-options li{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.user-post-options li:last-child{
+    margin-right: 0;
+}
+
+.user-post-options li img{
+    width: 25px;
+    margin-right: 10px;
+}
 
 /* DIV CONTAINER - RIGHT SIDEBAR */
 
