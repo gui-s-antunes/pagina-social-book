@@ -76,9 +76,13 @@ nav{
 
 .search-nav-right{
     background-color: #efefef;
-    padding: 6px 15px;
+    padding: 0px 10px 0px;
     border-radius: 2em;
     margin-right: 25px;
+    width: 400px;
+    height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .search-nav-right input{
@@ -86,6 +90,7 @@ nav{
     background: none;
     outline: none;
     padding: .5em;
+    flex-basis: 100%;
 }
 
 .search-nav-right img{
