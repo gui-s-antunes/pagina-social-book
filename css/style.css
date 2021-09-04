@@ -329,6 +329,60 @@ nav{
     margin-right: 10px;
 }
 
+/* MAIN - User Posts (have been posted)*/
+
+.user-post-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.user-post-info p:nth-child(2){
+    font-size: .8em;
+    color: rgb(131, 129, 129);
+}
+
+.user-post-content p{
+    color: rgb(131, 129, 129);
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+.user-post-content img{
+    width: 100%;
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
+
+.user-post-reaction{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.user-post-reaction ul li{
+    display: inline-flex;
+    align-items: flex-end;
+    list-style: none;
+    margin-right: 30px;
+    color: rgb(131, 129, 129);
+    font-weight: 550;
+}
+
+.user-post-reaction ul li img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.profile-picture-footer{
+    display: flex;
+    align-items: center;
+}
+.profile-picture-footer img{
+    width: 20px;
+    margin-right: .3em;
+}
+
 /* DIV CONTAINER - RIGHT SIDEBAR */
 
 .right-sidebar{
