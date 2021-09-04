@@ -134,7 +134,7 @@ nav{
 .left-sidebar{
     flex-basis: 25%;
     position: sticky;
-    top: 70px;
+    top: 77px;
     align-self: flex-start;
 }
 
@@ -389,7 +389,7 @@ nav{
     background-color: #fff;
     flex-basis: 25%;
     position: sticky;
-    top: 70px;
+    top: 77px;
     align-self: flex-start;
     box-sizing: border-box;
     padding: 0 25px;
