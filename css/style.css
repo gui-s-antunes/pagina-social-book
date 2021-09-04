@@ -9,6 +9,14 @@ body{
     background-color: #efefef;
 }
 
+a{
+    text-decoration: none;
+}
+
+span{
+    color: rgb(66, 64, 64);
+}
+
 textarea{
     resize: none;
 }
@@ -535,4 +543,14 @@ nav{
 
 .conversation-people p{
     color: rgb(131, 129, 129);
+}
+
+
+/* FOOTER */
+
+.footer-page{
+    margin: 2em 0 1em;
+    color: rgb(131, 129, 129);
+    width: 100%;
+    text-align: center;
 }
