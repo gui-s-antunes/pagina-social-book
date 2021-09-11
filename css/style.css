@@ -128,6 +128,109 @@ nav{
     right: 0;
 }
 
+.settings-menu{
+    background: white;
+    position: absolute;
+    top: 110%;
+    right: 5%;
+    width: 90%;
+    max-width: 305px;
+    height: auto;
+    padding: 1.2em;
+    border-radius: .5em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.settings-menu a{
+    font-size: .8em;
+}
+
+.settings-menu > .user-post-header{
+    justify-content: space-between;
+}
+
+.settings-menu > .user-post-header:first-child{
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-profile-config{
+    display: flex;
+    align-items: center;
+}
+
+.settings-menu .switch-lighter{
+    align-self: flex-start;
+    position: relative;
+    width: 50px;
+    height: 20px;
+    border-radius: .7em;
+    background-color: #ccc;
+}
+
+.settings-menu .switch-lighter::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: rgb(179, 96, 96);
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    top: 2.7px;
+}
+
+.settings-menu .switch-lighter:checked{
+    background-color: white;
+}
+
+.settings-menu .switch-lighter:checked::after{
+    right: 5%;
+    background-color: black;
+}
+
+/* .settings-menu > .user-post-header:first-child:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 20px;
+    border-radius: .7em;
+    background: #ccc;
+} */
+
+.settings-menu .settings__report{
+    padding-top: 1.2em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1.2em;
+}
+
+.settings__config{
+    /* padding-top: 1.2em; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings__config .config__arrow-img{
+    width: 15px;
+    height: 25px;
+}
+
+/* .settings__config::after{
+    content: url('../images/arrow.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('../images/arrow.png');
+    width: 15px;
+    height: 15px;
+} */
+
+.settings-menu:last-child{
+    padding-bottom: 0;
+}
+
 /* DIV CONTAINER BELOW */
 
 .container{
