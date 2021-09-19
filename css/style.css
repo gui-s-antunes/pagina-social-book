@@ -142,6 +142,9 @@ nav{
     padding: 1.2em;
     border-radius: .5em;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    /* transition-property: max-height opacity;
+    transition-duration: .5s, 10s; */
+    transition: max-height .5s ease, opacity .5s;
 }
 
 .settings-menu a{
